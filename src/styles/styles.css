@@ -55,9 +55,10 @@ body {
 }
 .main img {
     width: 90%;
+    max-width: 768px;
 }
 .main h1 {
-    margin: 10px;
+    margin: 15px;
 }
 .main p {
     margin: 0;
