@@ -20,28 +20,22 @@ body {
 .header {
     position: fixed;
     width: 100vw;
-    height: 70px;
+    height: 45px;
+    background-color: var(--dark-cornflower-blue);
     color: white;
     font-size: 1.2rem;
+    border-bottom: 1px solid white;
 }
-.header__navbar {
-    display: flex;
-    height: 100%;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 15px;
-}
-.header__logo {
-    font-size: 1.5rem;
-    padding-left: 15px;
-}
-.header__navbar ul {
-    list-style: none;
-    text-decoration: none;
-}
-.header__navbar a {
-    text-decoration: none;
-    color: white;
+.plankton {
+    width: 80px;
+    height: 80px;
+    margin: 5px auto;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-image: url('../assets/plankton.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 
