@@ -1,19 +1,14 @@
 :root {
-    --navy-blue: #03045E;
-    --dark-cornflower-blue: #023E8A;
-    --star-command-blue: #0077B6;
-    --blue-green: #0096C7;
-    --carulean-crayola: #00B4D8;
-    --sky-blue-crayola: #48CAE4;
-    --sky-blue: #90E0EF;
-    --blizzard-blue: #ADE8F4;
-    --powder-blue: #CAF0F8;
+    --primary-color: #51655C;
+    --secondary-color: #227BD7;
+    --variation-color: #CBCFB9;
+    --bright-color: #eee;
 }
 body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: var(--blue-green);
+    background-color: var(--primary-color);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -21,17 +16,17 @@ body {
     position: fixed;
     width: 100vw;
     height: 45px;
-    background-color: var(--dark-cornflower-blue);
+    background: var(--secondary-color);
     color: white;
     font-size: 1.2rem;
-    border-bottom: 1px solid white;
+    border-bottom: 12px solid var(--variation-color);
 }
 .plankton {
     width: 80px;
     height: 80px;
-    margin: 5px auto;
-    border: 1px solid white;
+    margin: 11px auto;
     border-radius: 50%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
     background-image: url('../assets/plankton.png');
     background-size: cover;
     background-position: center;
@@ -45,7 +40,7 @@ body {
     align-items: center;
     flex-direction: column;
     height: 100vh;
-    color: white;
+    color: var(--bright-color);
 }
 .main img {
     width: 90%;
