@@ -8,7 +8,6 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: var(--variation-color);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -57,18 +56,31 @@ body {
 }
 
 .projects {
-    width: 90%;
+    width: 100%;
     min-width: 300px;
-    max-width: 1024px;
+    background-color: var(--primary-color);
+}
+.projects__title {
     margin: 0 auto;
+    padding: 25px 15px;
+    background-color: var(--secondary-color);
+    color: var(--bright-color);
 }
 .projects__card {
-    display: grid;
+    display: flex;
+    max-width: 1024px;
+    margin: 0 auto;
+    margin-bottom: 50px;
     padding: 10px;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    flex-direction: column;
+    background-color: var(--variation-color);
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.5);
+}
+.projects__card:last-child {
+    margin-bottom: 0;
 }
 .card__img img {
-    width: 100%;
+    width: calc(100% - 10px);
+    border: 5px solid var(--primary-color);
     align-self: center;
 }
