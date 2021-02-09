@@ -21,15 +21,18 @@ body {
     border-bottom: 12px solid var(--variation-color);
 }
 .header__plankton {
+    display: block;
     width: 80px;
     height: 80px;
+    border-radius: 50%;
     margin: 11px auto;
+}
+.header__plankton img {
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
-    background-image: url('../assets/plankton.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    object-fit: cover;
 }
 
 
@@ -62,7 +65,7 @@ body {
 }
 .projects__title {
     margin: 0 auto;
-    padding: 25px 15px;
+    padding: 50px 15px;
     background-color: var(--secondary-color);
     color: var(--bright-color);
 }
