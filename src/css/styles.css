@@ -53,10 +53,11 @@ body {
 
 .hero {
     display: flex;
+    margin-top: 50px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
+    height: calc(100vh - 50px);
     background-color: var(--primary-color);
     color: var(--bright-color);
 }
@@ -80,7 +81,7 @@ body {
 }
 .projects__title {
     margin: 0 auto;
-    padding: 50px 15px;
+    padding: 30px 15px;
     background-color: var(--secondary-color);
     color: var(--bright-color);
 }
@@ -97,8 +98,12 @@ body {
 .projects__card:last-child {
     margin-bottom: 0;
 }
+.card__img {
+    margin: 0 auto;
+}
 .card__img img {
-    width: calc(100% - 10px);
+    max-width: calc(100% - 10px);
+    max-height: 420px;
     border: 5px solid var(--primary-color);
     align-self: center;
 }
