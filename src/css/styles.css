@@ -38,6 +38,8 @@ body {
 
 .header {
     position: absolute;
+    display: flex;
+    justify-content: space-between;
     width: 100vw;
     height: 45px;
     background: var(--secondary-color);
@@ -61,27 +63,66 @@ body {
 
 
 .hero {
-    display: flex;
-    margin-top: 50px;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: calc(100vh - 50px);
+    padding-top: 75px;
+    height: calc(100vh - 75px);
     background-color: var(--primary-color);
     color: var(--bright-color);
 }
 .hero__img {
+    text-align: center;
+}
+.hero__img img {
     width: 90%;
     max-width: 768px;
 }
+.hero__description {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
 .hero__me {
-    margin: 15px;
-}
-.hero__position {
     margin: 0;
-    margin-left: 10px;
-    text-decoration: underline;
+    font: var(--headline3);
 }
+.hero__me span:first-child {
+    display: block;
+    font: var(--headline5);
+}
+.hero__description > p {
+    margin: 0;
+}
+.hero__social {
+    padding-bottom: 24px;
+}
+.button-icon {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 4px;
+    border: 2px solid var(--secondary-color);
+    background-color: var(--bright-color);
+    text-decoration: none;
+}
+.button-icon img {
+    vertical-align: middle;
+}
+.button {
+    padding: 24px 13px;
+    border-radius: 4px;
+    border: none;
+    background: var(--secondary-color);
+    color: var(--bright-color);
+    font: var(--button);
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+}
+
+.button.button--secondary {
+    border: 2px solid var(--primary-color);
+    background: unset;
+    color: var(--primary-color);
+}
+
 
 .projects {
     width: 100%;
