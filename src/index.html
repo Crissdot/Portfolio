@@ -12,87 +12,94 @@
 <body>
     <a href="#projects" class="skip-link">Go to projects</a>
     <header class="header">
-        <a href="#" class="header__plankton">
-            <img src="./assets/plankton.png" width="80" height="80" alt="plankton">
-        </a>
+        <a href="#" class="header__plankton"><img src="./assets/plankton.png" width="80" height="80" alt="plankton"></a>
+        <nav class="header__menu">
+            <ul>
+                <li><a href="#">Hello</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact me</a></li>
+            </ul>
+        </nav>
+        <a href="https://github.com/Crissdot" target="_blank" class="header__icon"><img src="./assets/icons/icon-github.svg" width="40" height="40" alt="github icon"></a>
     </header>
-    <main>
-        <section class="hero">
-            <div class="hero__img">
-                <img src="./assets/undraw_developer_activity_bv83.svg" alt="developer activity">
+    <div class="wrapper">
+        <main>
+            <section class="hero">
+                <div class="hero__img">
+                    <img src="./assets/undraw_developer_activity_bv83.svg" alt="developer activity">
+                </div>
+                <div class="hero__description">
+                    <h1 class="hero__me">
+                        <span>Hello everyone!</span>
+                        <span>I'm Criss</span>
+                    </h1>
+                    <p>
+                        Frontend Developer, currently studying Informatics Engineering. I like Freestyle and Programming.
+                    </p>
+                    <div class="hero__social">
+                        <a class="button-icon" href="#"><img src="./assets/icons/icon-phone.svg" alt="phone icon"></a>
+                        <a class="button-icon" href="#"><img src="./assets/icons/icon-important_mail.svg" alt="mail icon"></a>
+                        <a class="button-icon" href="#"><img src="./assets/icons/icon-instagram.svg" alt="instagram icon"></a>
+                        <a class="button-icon" href="#"><img src="./assets/icons/icon-twitter_squared.svg" alt="twitter icon"></a>
+                    </div>
+                </div>
+            </section>
+            <section class="projects" id="projects">
+                <h2 class="projects__title">Projects</h2>
+                <article class="projects__card">
+                    <h3 class="card__title">Pomodoro Plus</h3>
+                    <a class="card__img" href="https://github.com/Crissdot/Pomodoro-Plus/" target="_blank">
+                        <img src="./assets/projects/PomodoroPlus.png" alt="A screenshot of Pomodoro Plus page">
+                    </a>
+                    <div class="card__info">
+                        <p>A pomodoro technique with a little more flexibility</p>
+                        <h4>Used Technologies</h4>
+                        <ul>
+                            <li>Javascript</li>
+                            <li>CSS</li>
+                            <li>HTML</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="projects__card">
+                    <h3 class="card__title">Dogs & Jokes</h3>
+                    <a class="card__img" href="https://crissdot.github.io/Dogs-and-Jokes/" target="_blank">
+                        <img src="./assets/projects/dogsAndJokes.png" alt="A screenshot of the Dogs and Jokes page">
+                    </a>
+                    <div class="card__info">
+                        <p>A page that show you a random joke and a random picture of dogs. Isn't it awesome?!</p>
+                        <h4>Used Technologies</h4>
+                        <ul>
+                            <li>Javascript</li>
+                            <li>CSS</li>
+                            <li>HTML</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="projects__card">
+                    <h3 class="card__title">Art LandingPage</h3>
+                    <a class="card__img" href="https://ejemploarte.web.app/" target="_blank">
+                        <img src="./assets/projects/Art Landing Page.png" alt="A screenshot of the Art Landing Page">
+                    </a>
+                    <div class="card__info">
+                        <p>A Landing Page to represent the Art, you also can see the page without Internet, it is working with Service Workers.</p>
+                        <h4>Used Technologies</h4>
+                        <ul>
+                            <li>HTML</li>
+                            <li>SASS</li>
+                            <li>Javascript</li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <p>SOCIAL MEDIA</p>
+            <div class="footer__social">
+                <a href="https://twitter.com/Crissdot_" target="_blank"> <img src="./assets/twitter.svg" alt="Twitter"> </a>
+                <a href="https://github.com/Crissdot" target="_blank"> <img src="./assets/github.svg" alt="Github"> </a>
             </div>
-            <div class="hero__description">
-                <h1 class="hero__me">
-                    <span>Hello everyone!</span>
-                    <span>I'm Criss</span>
-                </h1>
-                <p>
-                    Frontend Developer, currently studying Informatics Engineering. I like Freestyle and Programming.
-                </p>
-                <div class="hero__social">
-                    <a class="button-icon" href="#"><img src="./assets/icons/icon-phone.svg" alt="phone icon"></a>
-                    <a class="button-icon" href="#"><img src="./assets/icons/icon-important_mail.svg" alt="mail icon"></a>
-                    <a class="button-icon" href="#"><img src="./assets/icons/icon-instagram.svg" alt="instagram icon"></a>
-                    <a class="button-icon" href="#"><img src="./assets/icons/icon-twitter_squared.svg" alt="twitter icon"></a>
-                </div>
-                <a href="#" class="button">Test button</a>
-            </div>
-        </section>
-        <section class="projects" id="projects">
-            <h2 class="projects__title">Projects</h2>
-            <article class="projects__card">
-                <h3 class="card__title">Pomodoro Plus</h3>
-                <a class="card__img" href="https://github.com/Crissdot/Pomodoro-Plus/" target="_blank">
-                    <img src="./assets/projects/PomodoroPlus.png" alt="A screenshot of Pomodoro Plus page">
-                </a>
-                <div class="card__info">
-                    <p>A pomodoro technique with a little more flexibility</p>
-                    <h4>Used Technologies</h4>
-                    <ul>
-                        <li>Javascript</li>
-                        <li>CSS</li>
-                        <li>HTML</li>
-                    </ul>
-                </div>
-            </article>
-            <article class="projects__card">
-                <h3 class="card__title">Dogs & Jokes</h3>
-                <a class="card__img" href="https://crissdot.github.io/Dogs-and-Jokes/" target="_blank">
-                    <img src="./assets/projects/dogsAndJokes.png" alt="A screenshot of the Dogs and Jokes page">
-                </a>
-                <div class="card__info">
-                    <p>A page that show you a random joke and a random picture of dogs. Isn't it awesome?!</p>
-                    <h4>Used Technologies</h4>
-                    <ul>
-                        <li>Javascript</li>
-                        <li>CSS</li>
-                        <li>HTML</li>
-                    </ul>
-                </div>
-            </article>
-            <article class="projects__card">
-                <h3 class="card__title">Art LandingPage</h3>
-                <a class="card__img" href="https://ejemploarte.web.app/" target="_blank">
-                    <img src="./assets/projects/Art Landing Page.png" alt="A screenshot of the Art Landing Page">
-                </a>
-                <div class="card__info">
-                    <p>A Landing Page to represent the Art, you also can see the page without Internet, it is working with Service Workers.</p>
-                    <h4>Used Technologies</h4>
-                    <ul>
-                        <li>HTML</li>
-                        <li>SASS</li>
-                        <li>Javascript</li>
-                    </ul>
-                </div>
-            </article>
-        </section>
-    </main>
-    <footer>
-        <p>SOCIAL MEDIA</p>
-        <div class="footer__social">
-            <a href="https://twitter.com/Crissdot_" target="_blank"> <img src="./assets/twitter.svg" alt="Twitter"> </a>
-            <a href="https://github.com/Crissdot" target="_blank"> <img src="./assets/github.svg" alt="Github"> </a>
-        </div>
-    </footer>
+        </footer>
+    </div>
 </body>
 </html>
