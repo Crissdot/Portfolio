@@ -52,6 +52,7 @@ body {
     color: white;
     font-size: 1.2rem;
     border-bottom: 12px solid var(--variation-color);
+    z-index: 1;
 }
 .header__plankton {
     display: block;
@@ -150,9 +151,9 @@ body {
 }
 
 .button.button--secondary {
-    border: 2px solid var(--primary-color);
+    border: 2px solid var(--bright-color);
     background: unset;
-    color: var(--primary-color);
+    color: var(--bright-color);
 }
 
 
@@ -180,27 +181,58 @@ body {
     width: 80px;
     margin-top: 24px;
 }
-.projects__card {
+.projects__details {
+    margin: 40px 0;
+}
+.projects__detail div {
+    position: relative;
+    width: 288px;
+    height: 180px;
+}
+.projects__macbook {
+    position: absolute;
+    width: 280px;
+    margin-left: 8px;
+}
+.projects__macbook--ss {
+    position: absolute;
+    width: 205px;
+    height: 125px;
+    margin-left: 45px;
+    margin-top: 10px;
+}
+.projects__iphone {
+    position: absolute;
+    width: 80px;
+    margin-top: 30px;
+}
+.projects__iphone--ss {
+    position: absolute;
+    width: 58px;
+    height: 118px;
+    margin-top: 41px;
+    margin-left: 11px;
+    border-radius: 0 0 5px 5px;
+}
+.projects__detail h3 {
+    width: fit-content;
+}
+.projects__detail p {
+    margin: 16px 0 0;
+    font: var(--body1);
+    color: var(--bright-color);
+}
+.projects__detail > a {
     display: flex;
-    max-width: 1024px;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    padding: 10px;
-    flex-direction: column;
-    background-color: var(--variation-color);
-    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
-.projects__card:last-child {
-    margin-bottom: 0;
+.projects__detail > .button {
+    margin-top: 16px;
 }
-.card__img {
-    margin: 0 auto;
-}
-.card__img img {
-    max-width: calc(100% - 10px);
-    max-height: 420px;
-    border: 5px solid var(--primary-color);
-    align-self: center;
+.projects__detail > .button.button--secondary {
+    margin-top: 24px;
 }
 
 
