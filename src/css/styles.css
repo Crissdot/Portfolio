@@ -251,6 +251,22 @@ body {
 .projects__detail > .button.button--secondary {
     margin-top: 24px;
 }
+#project3 {
+    height: 235px;
+    margin-top: 40px;
+}
+.projects__tablet {
+    position: absolute;
+    width: 100%;
+    transform: rotate(90deg);
+}
+.projects__tablet--ss {
+    position: absolute;
+    width: 225px;
+    height: 172px;
+    margin-top: 52px;
+    margin-left: 35px;
+}
 
 
 .title {
