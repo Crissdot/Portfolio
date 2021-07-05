@@ -150,6 +150,7 @@ body {
 }
 
 .button.button--secondary {
+    height: 46px;
     border: 2px solid var(--bright-color);
     background: unset;
     color: var(--bright-color);
@@ -183,7 +184,7 @@ body {
 .projects__details {
     margin: 40px 0;
 }
-.projects__detail div {
+.projects__detail div:first-child {
     position: relative;
     margin: 0 auto;
 }
@@ -240,16 +241,16 @@ body {
     font: var(--body1);
     color: var(--bright-color);
 }
-.projects__detail > a {
+.projects__detail a {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
-.projects__detail > .button {
+.projects__detail .button {
     margin-top: 16px;
 }
-.projects__detail > .button.button--secondary {
+.projects__detail .button.button--secondary {
     margin-top: 24px;
 }
 #project3 {
@@ -321,6 +322,7 @@ footer p {
 
 @media screen and (min-width: 768px) {
     .wrapper {
+        max-width: 1024px;
         padding: 0 10%;
     }
     .header__menu {
@@ -355,10 +357,40 @@ footer p {
     .hero__img img {
         width: 100%;
     }
-}
 
-@media screen and (min-width: 1024px) {
-    .hero__img img {
-        max-width: 500px;
+
+    .projects__detail {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 32px;
+        margin: 80px 0 40px;
+    }
+    .projects__detail:nth-of-type(2n-1) div:first-child {
+        order: 2;
+    }
+    .projects__detail > div:last-child {
+        max-width: 50%;
+        order: 1;
+    }
+    .projects__detail a {
+        width: 125px;
+    }
+    .projects__detail a.button--secondary {
+        width: 121px;
+    }
+    .projects__detail h3, #project2, #project3 {
+        margin-top: 0;
+    }
+    .projects__detail .button.button--secondary {
+        margin-top: 16px;
+    }
+    .projects__buttons {
+        display: flex;
+        gap: 32px;
+    }
+
+    .form {
+        width: 80%;
     }
 }
