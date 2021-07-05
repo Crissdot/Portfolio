@@ -14,6 +14,9 @@
     --button: bold 14px/22px var(--font-base);
     --caption: normal 12px/19px var(--font-base);
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     box-sizing: border-box;
     margin: 0;
@@ -92,9 +95,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-top: 80px;
-    height: calc(100vh - 80px);
-    min-height: calc(550px - 80px);
+    padding-top: 80px;
     background-color: var(--primary-color);
     color: var(--bright-color);
 }
@@ -160,6 +161,7 @@ body {
 .projects {
     width: 100%;
     min-width: 288px;
+    padding-top: 60px;
     background-color: var(--primary-color);
 }
 .projects__info {
@@ -286,8 +288,13 @@ body {
 .form {
     display: flex;
     flex-direction: column;
+    padding-top: 60px;
     margin: 0 auto 60px;
     gap: 16px;
+}
+.form.title {
+    margin: 0;
+    margin-bottom: 4px;
 }
 .form label {
     display: flex;
@@ -337,7 +344,7 @@ footer p {
     }
     .hero {
         height: 400px;
-        margin-top: 150px;
+        padding-top: 150px;
         flex-direction: row;
         gap: 32px;
     }
