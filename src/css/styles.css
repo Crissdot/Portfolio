@@ -310,6 +310,9 @@ body {
     border: 2px solid #858C94;
     font: var(--body1);
 }
+#send-mail {
+    display: none;
+}
 
 
 footer {

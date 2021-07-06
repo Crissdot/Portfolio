@@ -126,6 +126,7 @@
                     </label>
                     <button class="button" type="submit">Send message</button>
                 </form>
+                <a href="mailto:crissdotcontact@gmail.com" id="send-mail"></a>
             </section>
         </main>
         <footer>
@@ -138,5 +139,20 @@
             <p>Copyright 2021 - All rights reserved</p>
         </footer>
     </div>
+    <script>
+        const form = document.querySelector('#contact > .form');
+        const sendMail = document.querySelector('#send-mail');
+
+        form.addEventListener('submit', handleSubmit);
+
+        function handleSubmit(e) {
+            e.preventDefault();
+
+            const formData = new FormData(this);
+
+            sendMail.setAttribute('href', `${sendMail.getAttribute('href')}?subject=${formData.get('name')}:${formData.get('email')}&body=${formData.get('message')}`);
+            sendMail.click();
+        }
+    </script>
 </body>
 </html>
